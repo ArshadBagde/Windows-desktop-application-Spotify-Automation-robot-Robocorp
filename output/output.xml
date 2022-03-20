@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.5 on win32)" generated="20220317 13:44:08.271" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="e:\Internshala\1-Xorion Technologies Pvt Ltd., Nagpur\Projects\Windows-desktop-application-Spotify-Automation-robot-Robocorp\tasks.robot">
+<test id="s1-t1" name="Open Spotify desktop application and play a song">
+<kw name="Open the Spotify desktop application">
+<kw name="Open From Search" library="RPA.Desktop.Windows">
+<arg>Spotify</arg>
+<arg>Spotify Premium</arg>
+<doc>Open application using Windows search dialog.
+Window title name is required to get handle on the application.</doc>
+<msg timestamp="20220317 13:44:09.021" level="INFO">Run from start menu: Spotify</msg>
+<msg timestamp="20220317 13:44:12.576" level="INFO">Open dialog: 'Spotify Premium'</msg>
+<msg timestamp="20220317 13:44:22.760" level="FAIL">ValueError: No window with title 'Spotify Premium', wildcard: False</msg>
+<status status="FAIL" starttime="20220317 13:44:09.020" endtime="20220317 13:44:22.760"/>
+</kw>
+<status status="FAIL" starttime="20220317 13:44:09.020" endtime="20220317 13:44:22.760"/>
+</kw>
+<kw name="Search for the song">
+<status status="NOT RUN" starttime="20220317 13:44:22.760" endtime="20220317 13:44:22.760"/>
+</kw>
+<kw name="Select the song">
+<status status="NOT RUN" starttime="20220317 13:44:22.760" endtime="20220317 13:44:22.760"/>
+</kw>
+<kw name="Play the song">
+<status status="NOT RUN" starttime="20220317 13:44:22.760" endtime="20220317 13:44:22.760"/>
+</kw>
+<kw name="Close All Applications" library="RPA.Desktop.Windows" type="TEARDOWN">
+<doc>Close all applications</doc>
+<msg timestamp="20220317 13:44:22.769" level="INFO">Closing all applications</msg>
+<status status="PASS" starttime="20220317 13:44:22.760" endtime="20220317 13:44:22.769"/>
+</kw>
+<status status="FAIL" starttime="20220317 13:44:09.019" endtime="20220317 13:44:22.769">ValueError: No window with title 'Spotify Premium', wildcard: False</status>
+</test>
+<doc>Spotify Windows desktop application robot. Opens the Spotify
+desktop application, searches for the given song, and plays the
+song. Demonstrates the basic Windows-automation capabilities of
+the RPA Framework, using keyboard navigation.</doc>
+<status status="FAIL" starttime="20220317 13:44:08.278" endtime="20220317 13:44:22.772"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
